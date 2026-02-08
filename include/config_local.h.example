@@ -1,0 +1,18 @@
+// config_local.h.example
+// 将此文件复制为 include/config_local.h 并填写你的私有凭据。
+// 然后将 include/config_local.h 添加到 .gitignore，避免将凭据提交到仓库。
+
+#ifndef CONFIG_LOCAL_H
+#define CONFIG_LOCAL_H
+
+// WiFi
+#define WIFI_SSID "your-ssid"
+#define WIFI_PASSWORD "your-password"
+
+// SNMP
+#define IP_ADDRESS 192,168,88,50      // 目标设备 IP 地址（四个整数，以逗号分隔）
+#define COMMUNITY "public"            // SNMP 读取 community 字符串（通常为只读 community，例如 "public"）
+#define SNMP_VERSION 1                // SNMP 版本：0 = SNMPv1, 1 = SNMPv2c
+#define POLL_INTERVAL 6000            // 轮询间隔（毫秒），表示两次 SNMP 轮询之间的延迟。例如 6000 = 6 秒
+
+#endif // CONFIG_LOCAL_H

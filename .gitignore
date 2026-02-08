@@ -1,0 +1,6 @@
+.pio
+.vscode
+.DS_Store
+
+# 忽略本地私有配置，避免凭据被提交
+include/config_local.h
