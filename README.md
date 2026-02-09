@@ -1,12 +1,9 @@
 # J-Monitor
 J-Monitor 是基于 ESP8266 的设备监控屏固件，适配群晖（可修改适配其他网络设备或NAS）。
-````markdown
-# J-Monitor
-J-Monitor 是基于 ESP8266 的设备监控屏固件，适配群晖（可修改适配其他网络设备或NAS）。
 基于立创开源平台上“时钟天气站”项目的硬件，编写的适配固件。
 固件通过 SNMP 周期轮询被监控设备，显示 CPU、内存、接口流量等关键指标，并在 TFT 屏上以图表/数值形式展现。
+<img src="./assets/img/overview.jpg" width="32.9%">
 
-![Overview](assets/overview.jpg)
 **主要功能**
 
 - 实时轮询 SNMP 设备并展示关键性能指标（CPU、内存、吞吐量等）。
@@ -89,8 +86,15 @@ pio device monitor -b 115200
 - 若要改变显示布局或颜色，请修改 `src/` 中的显示渲染代码或调整 `TFT_eSPI` 的字体/旋转设置。
 - 若需支持更多 SNMP OID 或自定义图表，可在轮询模块中添加相应 OID 并在界面渲染函数中绘制。
 
-```
+
 
 **License**
 
 - 本项目采用 MIT 许可证，详见 `LICENSE` 文件。
+
+### ★★★固件还不错，支持一下★★★
+<img src="./assets/img/buymeacoffee.jpg" width="32%">
+<img src="./assets/img/likeit.jpg" width="30%"><br>
+
+## Reference:
+1. \<ESP8266天气时钟SD2SD3小电视完美支持相册\> https://oshwhub.com/Q21182889/esp-xiao-dian-shi
